@@ -1,0 +1,89 @@
+* {
+  user-select: none;
+}
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+.list {
+  position: absolute;
+  width: 1250px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: dodgerblue;
+  padding: 70px 150px;
+}
+.menu_btn {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 50%;
+}
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  background: none;
+  outline: none;
+  border: none;
+}
+.menu_btn button:nth-child(1) {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.menu_btn button:nth-child(2) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.menuOpen {
+  transform: rotate(-90deg);
+  transition: transform 0.5s linear;
+}
+.menuClose {
+  transform: rotate(0deg);
+  transition: transform 0.5s linear;
+}
+.listOpen {
+  transform: rotate(-15deg);
+  transform-origin: top left;
+  transition: transform 0.3s linear;
+}
+.listClose {
+  transform: rotate(0deg);
+  transform-origin: top left;
+  transition: transform 0.3s linear;
+}
+.menu_bar {
+  font-family: fantasy;
+  position: absolute;
+  left: -130px;
+  top: 500px;
+}
+.menu_bar h2:nth-child(1) {
+  margin-left: 15px;
+}
+.menu_bar h2:nth-child(2) {
+  margin-left: 25px;
+}
+.menu_bar h2:nth-child(3) {
+  margin-left: 35px;
+}
+.menuBarOpen {
+  transform: translateX(130px);
+  transition: transform 0.5s linear;
+}
+.menuBarClose {
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
