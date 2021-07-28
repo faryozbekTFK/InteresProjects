@@ -1,0 +1,60 @@
+* {
+  user-select: none;
+}
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.cont {
+  font-size: 10em;
+  font-family: cursive;
+  font-weight: bold;
+  letter-spacing: -20px;
+  color: rgb(31, 31, 31);
+}
+span:nth-child(1) {
+  animation: shadowAnim 1s linear 1s infinite alternate-reverse;
+}
+span:nth-child(2) {
+  animation: shadowAnim 1s linear 2s infinite alternate-reverse;
+}
+span:nth-child(3) {
+  animation: shadowAnim 1s linear 3s infinite alternate-reverse;
+}
+span:nth-child(4) {
+  animation: shadowAnim 1s linear 4s infinite alternate-reverse;
+}
+span:nth-child(5) {
+  animation: shadowAnim 1s linear 5s infinite alternate-reverse;
+}
+span:nth-child(6) {
+  animation: shadowAnim 1s linear 6s infinite alternate-reverse;
+}
+span:nth-child(7) {
+  animation: shadowAnim 1s linear 7s infinite alternate-reverse;
+}
+span:nth-child(8) {
+  animation: shadowAnim 1s linear 8s infinite alternate-reverse;
+}
+span:nth-child(9) {
+  animation: shadowAnim 1s linear 9s infinite alternate-reverse;
+}
+@keyframes shadowAnim {
+  0% {
+    color: rgb(31, 31, 31);
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0px 0px 50px dodgerblue;
+    color: dodgerblue;
+    transition: text-shadow 0.2s ease;
+  }
+  100% {
+    color: #fff;
+    transition: 0.2s;
+  }
+}
