@@ -1,0 +1,84 @@
+* {
+  user-select: none;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 104, 160);
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 400px;
+  background-color: rgb(36, 79, 122);
+  font-family: Arial;
+  color: #fff;
+  align-items: center;
+  border-radius: 5px;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 250px;
+  height: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-bottom: 3px solid;
+  margin-top: 40px;
+}
+.label {
+  position: absolute;
+  margin-top: 55px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.input:focus + .label,
+.input:invalid + .activeEm,
+.input:valid + .activePas {
+  color: rgb(183, 219, 255);
+  transform: translateY(-30px);
+}
+.login {
+  width: 255px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: rgb(183, 219, 255);
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 40px;
+}
+h3 {
+  width: 250px;
+  font-size: 0.9em;
+  margin-top: 30px;
+  text-align: left;
+}
+h3 a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+.notValue {
+  display: none;
+  font-size: 0.8em;
+  margin-top: 90px;
+  color: red;
+  position: absolute;
+}
