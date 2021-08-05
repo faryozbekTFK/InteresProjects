@@ -29,5 +29,6 @@ function KvTenglama() {
 }
 
 BTN.onclick = function () {
-  KvTenglama();
+    if (A.value&&B.value&&C.value) KvTenglama(); else
+    RESULT.innerText = "Qiymatlarni kiriting.";
 };
