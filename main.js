@@ -61,7 +61,7 @@ RANDOMBTN.addEventListener("click", () => {
     }
   }
   RANDRES.innerText = numsArr;
-  SORTRES.innerText = '';
+  SORTRES.innerText = "";
 });
 
 SORTBTN.addEventListener("click", () => {
