@@ -21,7 +21,14 @@ RANDOMBTN.addEventListener("click", () => {
   let mn = parseInt(MIN.value);
   let mx = parseInt(MAX.value);
   let countNum = parseInt(COUNT.value);
-  if ((mn > 0) & (mx > 0) & (countNum > 0) & (mn < mx) & (countNum < mx)) {
+  if (
+    (mn > 0) &
+    (mx > 0) &
+    (countNum > 0) &
+    (mn < mx) &
+    (countNum < mx) &
+    (mx - mn > countNum)
+  ) {
     while (i !== countNum) {
       SORTBTN.disabled = false;
       k = 0;
@@ -47,12 +54,14 @@ RANDOMBTN.addEventListener("click", () => {
       MIN.classList.add("notValue");
       MAX.classList.add("notValue");
     }
-    if (COUNT.value >= MAX.value) {
+    if (COUNT.value >= parseInt(MAX.value) - parseInt(MIN.value)) {
       COUNT.classList.add("notValue");
       MAX.classList.add("notValue");
+      MIN.classList.add("notValue");
     }
   }
   RANDRES.innerText = numsArr;
+  SORTRES.innerText = '';
 });
 
 SORTBTN.addEventListener("click", () => {
