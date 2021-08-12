@@ -68,3 +68,19 @@ button:active {
 .notValue {
   box-shadow: 0px 0px 3px 3px red;
 }
+h4 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin-top: 0;
+  }
+  h1 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  h1, h4 {
+      font-family: Arial;
+  }
