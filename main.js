@@ -43,11 +43,11 @@ RANDOMBTN.addEventListener("click", () => {
     else MAX.classList.remove("notValue");
     if (!COUNT.value) COUNT.classList.add("notValue");
     else COUNT.classList.remove("notValue");
-    if (MIN.value > MAX.value) {
+    if (MIN.value >= MAX.value) {
       MIN.classList.add("notValue");
       MAX.classList.add("notValue");
     }
-    if (COUNT.value > MAX.value) {
+    if (COUNT.value >= MAX.value) {
       COUNT.classList.add("notValue");
       MAX.classList.add("notValue");
     }
