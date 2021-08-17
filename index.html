@@ -13,6 +13,22 @@
       <input type="text" placeholder="Max qiymat" id="maxNum" />
       <input type="text" placeholder="Elementlar soni" id="countNum" />
     </div>
+    <form class="chose">
+      <div>
+        <label for="mnToMx">Min To Max</label>
+        <input id="mnToMx" type="radio" name="type" value="Min To Max" />
+      </div>
+      <div>
+        <label for="mxToMn">Max To Min</label>
+        <input id="mxToMn" type="radio" name="type" value="Max To Min" />
+      </div>
+      <select id="sortType" >
+        <option value="bubbleSort">Bubble Sort</option>
+        <option value="insertionSort">Insertion Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="shellSort">Shell Sort</option>
+      </select>
+    </form>
     <div class="btns">
       <button id="randomBtn">Random</button>
       <button id="sortBtn">Sort</button>
@@ -27,8 +43,7 @@
         <div class="sortRes"></div>
       </div>
     </div>
-    <a
-      href="https://github.com/faryozbekTFK/InteresProjects/tree/KvadratTenglama"
+    <a href="https://github.com/faryozbekTFK/InteresProjects/tree/NumberSort"
       ><h4>GitHub Code</h4></a
     >
     <a href="http://t.me/talabaTFK"
@@ -36,4 +51,8 @@
     >
   </body>
   <script src="main.js"></script>
+  <script src="bubbleSort.js"></script>
+  <script src="insertionSort.js"></script>
+  <script src="selectionSort.js"></script>
+  <script src="shellSort.js"></script>
 </html>

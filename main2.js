@@ -1,5 +1,6 @@
 const MIN = document.getElementById("minNum");
 const MAX = document.getElementById("maxNum");
+const INPUT = document.getElementsByTagName("input");
 const COUNT = document.getElementById("countNum");
 const RANDOMBTN = document.getElementById("randomBtn");
 const SORTBTN = document.getElementById("sortBtn");
@@ -9,10 +10,27 @@ const RADIO = document.getElementsByName("type");
 const SELECT = document.getElementById("sortType");
 let selectValue;
 
+function checkingValue() {
+  let mn = parseInt(MIN.value);
+  let mx = parseInt(MAX.value);
+  console.log("MN: ", mn);
+  console.log("MX: ", mx);
+  let countNum = parseInt(COUNT.value);
+  if (
+    (mn > 0) &
+    (mx > 0) &
+    (countNum > 0) &
+    (mn < mx) &
+    (countNum < mx) &
+    (mx - mn > countNum)
+  )
+    return true;
+  else return false;
+}
+
 SELECT.addEventListener("change", () => {
   selectValue = SELECT.value;
   SORTBTN.disabled = false;
-  console.log(selectValue);
 });
 
 function workingSort() {
@@ -60,9 +78,7 @@ RANDOMBTN.addEventListener("click", () => {
   let num,
     k = 0,
     i = 0;
-  let mn = parseInt(MIN.value);
-  let mx = parseInt(MAX.value);
-  let countNum = parseInt(COUNT.value);
+
   if (
     (mn > 0) &
     (mx > 0) &
@@ -107,7 +123,6 @@ RANDOMBTN.addEventListener("click", () => {
 });
 
 SORTBTN.addEventListener("click", () => {
-  console.log("SORT");
   SORTBTN.disabled = true;
   workingSort();
 });

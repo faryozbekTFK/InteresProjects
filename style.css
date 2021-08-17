@@ -1,5 +1,6 @@
 * {
   user-select: none;
+  font-family: Arial;
 }
 body {
   display: flex;
@@ -42,6 +43,28 @@ input:focus {
 }
 button:active {
   transform: scale(0.9);
+}
+.chose {
+  display: flex;
+  width: 480px;
+  padding: 10px 15px;
+  border-top: 1px solid;
+  border-bottom: 2px solid;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+select {
+  width: 115px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-left: 2px solid green;
+  border-bottom: 2px solid green;
+  padding: 5px;
+  background: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .results {
   display: flex;
