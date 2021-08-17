@@ -106,6 +106,7 @@ RANDOMBTN.addEventListener("click", () => {
   SORTRES.innerText = "";
 });
 
+// SORT BTN WORKING
 SORTBTN.addEventListener("click", () => {
   console.log("SORT");
   SORTBTN.disabled = true;

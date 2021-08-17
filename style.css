@@ -54,6 +54,7 @@ button:active {
   align-items: center;
   cursor: pointer;
 }
+
 select {
   width: 115px;
   height: 30px;

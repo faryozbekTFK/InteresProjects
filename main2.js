@@ -28,6 +28,23 @@ function checkingValue() {
   else return false;
 }
 
+function chekingRadio() {
+  if (checkingValue) {
+    let sortType;
+    RADIO.forEach((radio, idx) => {
+      radio.addEventListener("click", () => {
+        console.log("idx: ", idx);
+        radio.addEventListener("change", () => {
+          sortType = idx;
+          SORTBTN.disabled = false;
+        });
+      });
+    });
+    
+  }
+}
+
+
 SELECT.addEventListener("change", () => {
   selectValue = SELECT.value;
   SORTBTN.disabled = false;
@@ -61,16 +78,6 @@ function randomFunction(min, max) {
   return result;
 }
 
-let sortType;
-RADIO.forEach((radio, idx) => {
-  radio.addEventListener("click", () => {
-    console.log("idx: ", idx);
-    radio.addEventListener("change", () => {
-      sortType = idx;
-      SORTBTN.disabled = false;
-    });
-  });
-});
 
 let numsArr = [];
 RANDOMBTN.addEventListener("click", () => {
