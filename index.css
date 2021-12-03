@@ -3,7 +3,8 @@
 }
 
 body {
-  background: fuchsia;
+  background: url(./image/background.jpg);
+  backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
   align-items: center;
