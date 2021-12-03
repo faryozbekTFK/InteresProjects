@@ -3,7 +3,7 @@
 }
 
 body {
-  /* background-image: url(./image/background.jpg); */
+  background: url(./image/background.jpg);
   backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
