@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": 1, "name": "Krasofka", "price": 150000, "category": "Shoes" },
+    { "id": 2, "name": "Tufli", "price": 100000, "category": "Shoes" },
+    { "id": 3, "name": "Futbolka", "price": 80000, "category": "Outerwear" }
+  ]
+}
